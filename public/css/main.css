@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: black;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #D0F5BE, #98EECC, #A4907C);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.svg {
+    color: red;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+/*Form*/
+#contact-me{
+    /* background-color: peachpuff; */
+    margin: 0;
+    padding:0;
+}
+#footer {
+    margin: 0px;
+}
