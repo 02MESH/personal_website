@@ -1,6 +1,4 @@
-.list {
-  --color-bg: #f0f0f0;
-  --color-text: #303030;
+.list h1 {
   text-align: center;
 }
 
@@ -12,37 +10,31 @@
     max-width: 45em;
     padding: 2em;
     gap: 2em;
-    counter-reset: ol-cards-counter;
   }
 
 .ol-cards li {
   display: grid;
-  grid-template-areas:
-    "step title"
-    "step content";
+}
+
+.ol-cards li {
+  display: grid;
   padding: 1em 2em 1em 0;
   row-gap: 0.5em;
   column-gap: 2em;
   box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4),
     inset 0.05em 0.05em rgba(255, 255, 255, 1);
-  counter-increment: ol-cards-counter;
+  padding: 2%;
   text-align: left;
 }
 
-.ol-cards li .title {
-  grid-area: title;
+.ol-cards h4 {
+  padding: 0;
+  margin: -2px 0;
 }
-.ol-cards li .content {
-  grid-area: content;
-  font-size: 0.9em;
+.ol-cards em {
+  margin-bottom: 10px;
 }
-.step{
-  display: inline-block;
-  position: relative;
-  top: -21%;
+.ol-cards p {
+  padding: 0;
+  margin: -2px 0;
 }
-.step img{
-  height: 75px;
-  width: 75px;
-}
-
