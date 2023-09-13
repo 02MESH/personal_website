@@ -1,5 +1,6 @@
-.list h1 {
+.section_header{
   text-align: center;
+  padding-bottom: 2vh;
 }
 
 .ol-cards {

@@ -31,11 +31,24 @@ section {
     /* padding-top: 4vh; */
     /* height: 96vh; */
     /* margin: 0 10rem; */
+    margin: 10vh 0;
     box-sizing: border-box;
     min-height: fit-content;
 }
+footer{
+    background-color: black;
+}
 .section-container{
     display: flex;
+}
+
+.tech-stack {
+    width: 30px;
+    height: 30px;
+}
+
+#interests_and_activities{
+    background-color: black;
 }
 
 /*Profile-section*/
