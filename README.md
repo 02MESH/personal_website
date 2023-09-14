@@ -5,9 +5,8 @@ Tech stack for this website
     * HTML
     * CSS
     * wow.js
-    * animate.css#
+    * animate.css
     * parallax
 
-• Back-end
-    * nodeJS
-    * expressJS
+• Reactive elements
+    * js

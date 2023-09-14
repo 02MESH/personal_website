@@ -1,9 +1,13 @@
-body{
+/* body{
     background-color: white;
     color: black;
     width: 100%;
     height: 100%;
 }
+section:nth-child(even) {
+    background-color: yellow;
+}
+
 #introduction {
     background-image: url('../images/deleteLater1.jpeg');
     height: 50vh;
@@ -29,12 +33,12 @@ body{
     letter-spacing: 3px;
     color: black;
     text-transform: uppercase;
-}
+} */
 
 .gradient-background {
-    background: linear-gradient(300deg, #88304E, #E23E57, #522546);
+    background: linear-gradient(300deg, #f0f7ff, #ffffff, #91C8E4);
     background-size: 180% 180%;
-    animation: gradient-animation 5s ease infinite;
+    animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -49,7 +53,7 @@ body{
     }
 }
 
-.svg {
+/* .svg {
     color: red;
 }
 
@@ -58,11 +62,9 @@ body{
     padding:0;
 }
 /*Form*/
-#contact-me{
+
+/* #contact-me{ */
     /* background-color: peachpuff; */
-    margin: 0;
+    /* margin: 0;
     padding:0;
-}
-#footer {
-    margin: 0px;
-}
+} */

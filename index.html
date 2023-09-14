@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <!--Stylesheets-->
+    <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/styles.css">
     <link rel="stylesheet" href="./public/css/mediaqueries.css">
     <link rel="stylesheet" href="./public/css/list-style.css">
@@ -40,19 +41,16 @@
                             href="#profile">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-me" onClick="toggleMenu();">Education</a>
+                        <a class="nav-link" href="#education" onClick="toggleMenu();">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-me" onClick="toggleMenu();">Projects</a>
+                        <a class="nav-link" href="#personal_projects" onClick="toggleMenu();">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-me" onClick="toggleMenu();">Skills</a>
+                        <a class="nav-link" href="#technical_stack" onClick="toggleMenu();">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-me" onClick="toggleMenu();">Extracurricular</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-me" onClick="toggleMenu();">Contact Me</a>
+                        <a class="nav-link" href="#contact_me" onClick="toggleMenu();">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -88,8 +86,8 @@
                         </ul>
                     </div>
                     <div class="btn-container justify-content-center">
-                        <button type="button" class="btn btn-dark">Download CV</button>
-                        <button type="button" onclick="location.href='./#contact-me'" class="btn btn-dark">Contact
+                        <button type="button" class="btn profile-button">Download CV</button>
+                        <button type="button" onclick="location.href='./#contact-me'" class="btn profile-button">Contact
                             Me</button>
                     </div>
                 </div>
@@ -100,8 +98,8 @@
 
     <!--Education section-->
     <section id="education">
+        <h1 class="section_header">My Education</h1>
         <div class="list">
-            <h1 class="section_header">My Education</h1>
             <ol class="ol-cards alternate">
                 <li>
                     <H4>University of Kent</H4>
@@ -123,37 +121,19 @@
         <h1 class="section_header">Personal Projects</h1>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 cards">
+                <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
-                        <div class="service-thumb">
+                        <div class="personal_project_tiles">
                             <i class="fa-solid fa-film"></i>
-
+                            
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
-                        <div class="service-thumb">
+                        <div class="personal_project_tiles">
                             <i class="fa-solid fa-film"></i>
-
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <a href="https://www.w3schools.com">
-                        <div class="service-thumb">
-                            <i class="fa-solid fa-film"></i>
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="https://www.w3schools.com">
-                        <div class="service-thumb">
-                            <i class="fa-solid fa-film"></i>
-
+                            
                         </div>
                     </a>
                 </div>
@@ -161,17 +141,35 @@
             <div class="row">
                 <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
-                        <div class="service-thumb">
+                        <div class="personal_project_tiles">
                             <i class="fa-solid fa-film"></i>
-
+                            
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
-                        <div class="service-thumb">
+                        <div class="personal_project_tiles">
                             <i class="fa-solid fa-film"></i>
-
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://www.w3schools.com">
+                        <div class="personal_project_tiles">
+                            <i class="fa-solid fa-film"></i>
+                            
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://www.w3schools.com">
+                        <div class="personal_project_tiles">
+                            <i class="fa-solid fa-film"></i>
+                            
                         </div>
                     </a>
                 </div>
@@ -180,153 +178,115 @@
     </section>
 
     <section id="technical_stack">
-        <h1 class="section_header">Technical Stack</h1>
+        <h1 class="section_header">Technical Skills</h1>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    Programming Languages<br>
-                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-success" style="width: 25%">25%</div>
-                      </div>
-                      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
-                      </div>
-                      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
-                      </div>
-                      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-danger" style="width: 100%">100%</div>
-                      </div>
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
+                <div class="col-md-4 col-sm-12">
+                    <div class="skills_tiles">
+                        <div class="skills_section_heading">
+                            Programming Languages 
+                        </div>
+                        <span>                       
+                            <img src="./public/images/svgs/languages/cplusplus.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/python-5.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/typescript.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/logo-javascript.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/java.png" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        </span>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    Web Development & Frameworks<br>
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
+                <div class="col-md-4 col-sm-12">
+                    <div class="skills_tiles">
+                        Webdev & Frameworks<br>
+                        <span class="skills">                        
+                            <img src="./public/images/svgs/webdevelopment/html-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/bootstrap-5-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/ejs-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/nodejs-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        </span>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    Databases & Other technologies<br>
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
 
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
+                <div class="col-md-4 col-sm-12">
+                    <div class="skills_tiles">
+                        <div class="skills_section_heading">
+                            Database & Other tech
+                        </div>
+                        <span>                       
+                            <img src="./public/images/svgs/databases/mysql-logo.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases/postgresql.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases/sequelizejs-icon.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases/mongodb-icon-1-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases//mongoose.png" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        </span>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    In development<br>
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-                    <img class="tech-stack" src="./public/images/svgs/languages/cplusplus.svg">
-
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="skills_tiles">
+                        <div class="skills_section_heading">
+                            Learning right now
+                        </div>
+                        <span>                       
+                            <img src="./public/images/svgs/cloud/docker.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/cloud/microsoft-azure-3.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/cloud/heroku-4.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/react-2.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/java.png" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Extra-curricular activities section-->
-    <section id="interests_and_activities">
-        <h1 class="section_header">Interests and activities</h1>
-    </section>
-
     <!--Contact Me section-->
-    <section id="contact-me">
+    <section id="contact_me">
         <h1 class="section_header">Contact Me</h1>
         <div id="test" class="container align-items-center d-flex justify-content-center">
-            <form action="" method="POST">
+            <form action="https://formspree.io/f/mvojqknd" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="first_name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="first_name" id="first_name" aria-describedby="emailHelp"
                         required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" required>
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="last_name" id="last_name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputPassword1" required>
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
                     <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Message</label>
-                    <textarea class="form-control" id="formMessage" required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" name="message" id="message" required></textarea>
                     <!-- <input type="text" class="form-control" id="exampleInputPassword1" required> -->
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-dark">Submit</button>
 
             </form>
         </div>
     </section>
 
     <!--Footer section-->
-    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0">
+    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 bg-dark">
         <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">2023 Meshwil Dias</span>
+            <img src="./public/images/logo.ico" width="30" height="24" class="d-inline-block align-text-bottom">
+            <span class="mb-md-0 text-light">2023 Meshwil Dias</span>
         </div>
 
         <ul id="socials" class="nav px-4 col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#">
+            <li class="ms-3"><a class="text-light" href="#">
                     <i class="fa-brands fa-linkedin"></i>
                 </a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#">
+            <li class="ms-3"><a class="text-light" href="#">
                     <i class="fa-brands fa-github"></i>
                 </a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#">
+            <li class="ms-3"><a class="text-light" href="#">
                     <i class="fa-brands fa-discord"></i>
                 </a></li>
         </ul>

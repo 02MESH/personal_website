@@ -6,7 +6,7 @@
 }
 /*tag selectors here...*/
 body {
-    background-color: #f0f7ff;
+    background-color: #D8D9DA;
 }
 * {
     margin: 0;
@@ -27,17 +27,15 @@ p {
     margin:0;
 }
 /*Section related stuff*/
+section:nth-child(even) {
+    background-color: white;
+}
 section {
-    /* padding-top: 4vh; */
-    /* height: 96vh; */
-    /* margin: 0 10rem; */
-    margin: 10vh 0;
+    padding: 10vh 0;
     box-sizing: border-box;
     min-height: fit-content;
 }
-footer{
-    background-color: black;
-}
+
 .section-container{
     display: flex;
 }
@@ -47,9 +45,9 @@ footer{
     height: 30px;
 }
 
-#interests_and_activities{
+/* #interests_and_activities{
     background-color: black;
-}
+} */
 
 /*Profile-section*/
 #profile {
@@ -93,15 +91,14 @@ footer{
 /* .cards {
     background-color: cyan;
 } */
-#personal_projects {
-    background-color: black;
-    padding: 3vh 0;
-}
-.service-thumb {
+
+/*Tiles for personal projects*/
+.personal_project_tiles {
     margin-right: 20px;
     margin-bottom: 20px;
     display: grid;
-    background: cyan;
+    background: #212529;
+    color: white;
     border-radius: 5px;
     padding: 42px 22px;
     cursor: crosshair;
@@ -109,8 +106,44 @@ footer{
     top: 0;
     transition: ease-in-out 0.4s;
 }
-.service-thumb:hover {
+.personal_project_tiles:hover {
+    background-color: #f0f7ff;;
+    color: #212529;
+}
+
+.skills_tiles {
+    height: 12vh;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: grid;
     background-color: white;
+    color: #212529;
+    border-radius: 5px;
+    padding: 20px 20px;
+    cursor: crosshair;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.skills_tiles:hover {
+    background: #212529;
+    color: white;
+}
+
+/* .skills {
+    padding: 3px 0;
+} */
+
+.skills_section_heading {
+    padding: 0px;
+    margin: 0px;
+}
+
+.profile-button{
+    background-color: #212529;
+    color: white;
 }
 
 @media (max-width: 576px) {
