@@ -14,22 +14,34 @@
     <!--fontawesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <!--wow.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!--Animate.css-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
     <!--Stylesheets-->
     <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/styles.css">
-    <link rel="stylesheet" href="./public/css/mediaqueries.css">
-    <link rel="stylesheet" href="./public/css/list-style.css">
+    <link rel="stylesheet" href="./public/css/classes.css">
+    <link rel="stylesheet" href="./public/css/profile.css">
+    <link rel="stylesheet" href="./public/css/education.css">
+    <link rel="stylesheet" href="./public/css/personal_projects.css">
+    <link rel="stylesheet" href="./public/css/skills.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
 </head>
 
 <body>
     <!--Navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid ">
             <a class="navbar-brand " href="#">
                 <img src="./public/images/logo.ico" width="30" height="24" class="d-inline-block align-text-bottom">
                 MESHWIL DIAS
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,66 +73,94 @@
     <section id="profile">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-md-4 col-sm-12 col-lg-4">
+                <div class="col-sm-12 col-lg-4">
                     <img id="test" src="./public/images/profile-picture.png"
-                        class="d-block mx-lg-auto img-fluid justify-content-center" alt="Bootstrap Themes" width="300"
+                        class="d-block mx-auto img-fluid" alt="Profile Picture" width="300"
                         height="300" loading="lazy">
                 </div>
-                <div class="col-md-8 col-sm-12 col-lg-8">
+                <div class="col-sm-12 col-lg-8">
                     <p class="section__text__p1">Hello, I'm</p>
-                    <h1>Meshwil Dias</h1>
-                    <p class="section__text__p2">A third-year Computer Science student at the University of Kent</p>
-                    <div id="social-container">
+                    <h1 id="profile_heading">Meshwil Dias</h1>
+                    <p class="section__text__p2">
+                        I'm part of Kent University's Class of 2024, where I'm on a journey to earn my Bachelor's degree 
+                        in Computer Science. I've been exploring the world of Computer Science since my time in Sixth Form, 
+                        and I'm pretty comfortable with a bunch of programming languages and frameworks. When I'm not in class, 
+                        you'll often find me diving into new tech stuff, like DevOps and Cloud.
+                        <br><br>
+                        I'm also pretty passionate about my software projects, which I work on either solo or with my 
+                        buddies. Beyond academics, I like to stay active with activities like powerlifting and badminton. 
+                        Sometimes, for fun, my friends and I like to tackle leetcode problems. And in those rare moments 
+                        of free time, you might catch me gaming, building cool keyboards and computers, or going on food 
+                        shopping trips with my mates.
+                    </p>
+                    <div id="social_container">
                         <ul id="socials" class="list-unstyled d-flex justify-content-center">
-                            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/mad-0000">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a></li>
-                            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/02MESH">
-                                    <i class="fa-brands fa-github"></i>
-                                </a></li>
-                            <li class="ms-3"><a class="text-body-secondary" href="#">
-                                    <i class="fa-brands fa-discord"></i>
-                                </a></li>
-                            <li class="ms-3"><a class="text-body-secondary" href="#">
-                                    <i class="fa-brands fa-docker"></i> </a></li>
+                            <li>
+                                <a class="fa fa-linkedin fa-xl" href="https://www.linkedin.com/in/mad-0000">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fa fa-github fa-xl" href="https://github.com/02MESH">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fa-brands fa-docker fa-xl" href="#">
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="btn-container justify-content-center">
-                        <button type="button" class="btn profile-button">Download CV</button>
-                        <button type="button" onclick="location.href='./#contact-me'" class="btn profile-button">Contact
-                            Me</button>
+                    <div class="btn-container justify-content-center cv_buttons">
+                        <button type="button" class="btn profile-button cv_buttons">View CV</button>
+                        <button type="button" onclick="location.href='./#contact-me'" class="btn profile-button">Download CV</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- onclick="window.open('./')" -->
 
     <!--Education section-->
+    <!-- class="animate__animated animate__fadeInUpBig" -->
     <section id="education">
-        <h1 class="section_header">My Education</h1>
-        <div class="list">
-            <ol class="ol-cards alternate">
-                <li>
-                    <H4>University of Kent</H4>
-                    <em><span>Bachelors in Computer Science</span><span> | </span><span>Sep 2021 - Jun
-                            2024(Expected)</span></em>
-                    <p><strong>Relevant Coursework:</strong>TEST TEST TEST</p>
-                <li>
-                    <H4>St. Gregorys Catholic Science College</H4>
-                    <em><span>A-Levels</span><span> | </span><span>Sep 2018 - Apr 2021</span></em>
-                    <p><strong>Subjects: </strong>Business Studies, Computer Science & Psychology</p>
-                    <p><strong>Relevant Coursework:</strong>TEST TEST TEST</p>
-                </li>
-            </ol>
+        <div class="container">
+            <h1 class="section_header animate__animated animate__fadeInUpBig">My Education</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="education_container animate__animated animate__fadeInUpBig mx-auto mb-5">
+                        <H4>University of Kent</H4>
+                        <em><span>Bachelors in Computer Science</span></em><span> | <em></span><span>Sep 2021 - Jun
+                                2024</span></em>
+                        <p><strong>Cumulative Average:</strong> 80%. <strong>First Class Predicted</strong></p>
+                        <p><strong>Relevant Coursework;<br> (1st Year):</strong>Introduction to Object-Oriented Programming, 
+                        Computers and the Cloud, Human-Computer Interaction, Foundations of Computing 1 (Mathematics), Further
+                        Object-Oriented Programming, Foundations of Computing 2 (Mathematics), Problem Solving with 
+                        Algorithms, Databases an the Web.<br> <strong>(2nd Year):</strong> Computer Systems, Theory of Computing, 
+                        Algorithms Correctness and Efficiency, Introduction to Artificial Intelligence, Database Systems,
+                        Functional Programming, Software Development, Introduction to Cyber Security. <br><strong>(3rd Year i.e. current):
+                        </strong>Video Games Development (Unity), Computational Intelligence in Business, Economics and Finance, 
+                        Internet of Things, Solving Problems with Data and Text, Blockchain Systems, Computational Creativity</p>
+                    </div>
+                </div>
+            </div class="row">
+                <div class="col-12">
+                    <div class="education_container animate__animated animate__fadeInUpBig mx-auto">
+                        <H4>St. Gregorys Catholic Science College</H4>
+                        <em><span>A-Levels</span></em><span> | <em></span><span>Sep 2018 - Apr 2021</span></em>
+                        <p><strong>Subjects: </strong>Business Studies, Computer Science & Psychology</p>
+                        <p><strong>Grades received:</strong> BBB</p>
+                        <p><strong>Relevant Coursework:</strong>Python Programming, Introduction to Artificial 
+                            Intelligence, Data Structures and Algorithms.</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
     <!--Personal Projects section-->
     <section id="personal_projects">
-        <h1 class="section_header">Personal Projects</h1>
         <div class="container">
-            <div class="row">
+            <h1 class="section_header  animate__animated animate__fadeInUpBig ">Personal Projects</h1>
+            <div class="row  animate__animated animate__fadeInUpBig ">
                 <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
@@ -138,7 +178,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row  animate__animated animate__fadeInUpBig ">
                 <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
@@ -156,7 +196,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row animate__animated animate__fadeInUpBig ">
                 <div class="col-sm-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
@@ -178,8 +218,8 @@
     </section>
 
     <section id="technical_stack">
-        <h1 class="section_header">Technical Skills</h1>
         <div class="container">
+            <h1 class="section_header">Technical Skills</h1>
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <div class="skills_tiles">
@@ -243,43 +283,44 @@
     </section>
 
     <!--Contact Me section-->
-    <section id="contact_me">
-        <h1 class="section_header">Contact Me</h1>
-        <div id="test" class="container align-items-center d-flex justify-content-center">
-            <form action="https://formspree.io/f/mvojqknd" method="POST">
-                <div class="mb-3">
-                    <label for="first_name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" name="first_name" id="first_name" aria-describedby="emailHelp"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="last_name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" name="last_name" id="last_name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
-                    <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" name="message" id="message" required></textarea>
-                    <!-- <input type="text" class="form-control" id="exampleInputPassword1" required> -->
-                </div>
-                <button type="submit" class="btn btn-dark">Submit</button>
+    <section id="contact_me" class="min-vh-100">
+        <div class="container">
+            <h1 class="section_header">Contact Me</h1>
+            <div id="test" class="container align-items-center d-flex justify-content-center">
+                <form action="https://formspree.io/f/mvojqknd" method="POST">
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="first_name" id="first_name" aria-describedby="emailHelp"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last_name" id="last_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                        <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" rows=10 name="message" id="message" required></textarea>
+                        <!-- <input type="text" class="form-control" id="exampleInputPassword1" required> -->
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
 
-            </form>
+                </form>
+            </div>
         </div>
     </section>
 
     <!--Footer section-->
     <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 bg-dark">
         <div class="col-md-4 d-flex align-items-center">
-            <img src="./public/images/logo.ico" width="30" height="24" class="d-inline-block align-text-bottom">
             <span class="mb-md-0 text-light">2023 Meshwil Dias</span>
         </div>
 
-        <ul id="socials" class="nav px-4 col-md-4 justify-content-end list-unstyled d-flex">
+        <ul id="socials_bottom" class="nav px-4 col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-light" href="#">
                     <i class="fa-brands fa-linkedin"></i>
                 </a></li>
@@ -316,11 +357,34 @@
     </section> -->
 
     <!--Script Links here-->
+    <script>
+        let sec = document.querySelectorAll('section');
+        let links = document.querySelectorAll('nav a');
+
+        window.onscroll = () => {
+            sec.forEach(section => {
+                let top = window.scrollY;
+                let offset = section.offsetTop - 60;
+                let height = section.offsetHeight;
+                let id = section. getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        document.querySelector('nav a[href*=' + id + ']').classList.add('active');
+                    })
+                }
+            })
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="./util/script.js"></script>
     <script src="https://kit.fontawesome.com/6e1998c58e.js" crossorigin="anonymous"></script>
+    <script>
+        new WOW.init();
+    </script>
 </body>
 
 </html>

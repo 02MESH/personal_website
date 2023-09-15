@@ -1,0 +1,18 @@
+/*Tiles for personal projects*/
+.personal_project_tiles {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    background: #212529;
+    color: white;
+    border-radius: 5px;
+    padding: 42px 22px;
+    cursor: crosshair;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 0.4s;
+}
+.personal_project_tiles:hover {
+    background-color: #f0f7ff;;
+    color: #212529;
+}

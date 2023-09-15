@@ -1,0 +1,30 @@
+.skills_tiles {
+    height: 12vh;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    background-color: white;
+    color: #212529;
+    border-radius: 5px;
+    padding: 20px 20px;
+    cursor: crosshair;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.skills_tiles:hover {
+    background: #212529;
+    color: white;
+}
+
+.skills_section_heading {
+    padding: 0px;
+    margin: 0px;
+}
+
+.tech-stack {
+    width: 30px;
+    height: 30px;
+}

@@ -1,6 +1,6 @@
 function toggleMenu() {
-    const screenWidth = window.screen.width;
+    const screenWidth = window.innerWidth;
     if (screenWidth < 1200) {
-        const menu = document.querySelector(".navbar-toggler").click();
+        document.querySelector(".navbar-toggler").click();
     }
 }

@@ -1,0 +1,55 @@
+.section__pic-container {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p {
+    font-weight: 600;
+}
+.section-text__p1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.section_header{
+    /* padding-left: 6%; */
+    padding-bottom: 2vh;
+  }
+.profile-button{
+    background-color: #212529;
+    color: white;
+}
+
+#social_container {
+    padding: 10px 0;
+}
+
+#socials li a {
+    padding: 20px 10px;
+    margin: 0 20px;
+    border-radius: 70%;
+    color: black
+}
+#socials li a:hover {
+    color: white;
+    background-color: black;
+    transition: ease-in-out 0.4s;
+}
+#profile_heading {
+    padding-bottom: 10px;
+}
+.cv_buttons{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.btn {
+    height: 3vh;
+    width: 15vh;
+}
