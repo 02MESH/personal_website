@@ -16,3 +16,11 @@
     background-color: #f0f7ff;;
     color: #212529;
 }
+.personal_project_tiles
+.project_icons {
+    width: 20px;
+}
+.personal_project_heading h5, 
+.personal_project_heading div i {
+    display: inline-block;
+}

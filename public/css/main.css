@@ -31,9 +31,12 @@ section:nth-child(even) {
     background-color: white;
 }
 section {
-    padding: 7vh 0;
+    padding: 3vh 0;
     box-sizing: border-box;
     min-height: fit-content;
+}
+a {
+    text-decoration: none;
 }
 footer {
     margin: 0;

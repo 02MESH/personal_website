@@ -18,11 +18,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <!--Animate.css-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Recaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!--Stylesheets-->
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/classes.css">
@@ -74,44 +74,53 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row align-items-center g-5 py-5">
                 <div class="col-sm-12 col-lg-4">
-                    <img id="test" src="./public/images/profile-picture.png"
-                        class="d-block mx-auto img-fluid" alt="Profile Picture" width="300"
-                        height="300" loading="lazy">
+                    <img id="test" src="./public/images/profile-picture.png" class="d-block mx-auto img-fluid"
+                        alt="Profile Picture" width="300" height="300" loading="lazy">
                 </div>
                 <div class="col-sm-12 col-lg-8">
                     <p class="section__text__p1">Hello, I'm</p>
                     <h1 id="profile_heading">Meshwil Dias</h1>
                     <p class="section__text__p2">
-                        I'm part of Kent University's Class of 2024, where I'm on a journey to earn my Bachelor's degree 
-                        in Computer Science. I've been exploring the world of Computer Science since my time in Sixth Form, 
-                        and I'm pretty comfortable with a bunch of programming languages and frameworks. When I'm not in class, 
+                        I'm part of Kent University's Class of 2024, where I'm on a journey to earn my Bachelor's degree
+                        in Computer Science. I've been exploring the world of Computer Science since my time in Sixth
+                        Form,
+                        and I'm comfortable with a bunch of programming languages and frameworks. When I'm not in
+                        class,
                         you'll often find me diving into new tech stuff, like DevOps and Cloud.
                         <br><br>
-                        I'm also pretty passionate about my software projects, which I work on either solo or with my 
-                        buddies. Beyond academics, I like to stay active with activities like powerlifting and badminton. 
-                        Sometimes, for fun, my friends and I like to tackle leetcode problems. And in those rare moments 
-                        of free time, you might catch me gaming, building cool keyboards and computers, or going on food 
+                        I'm also extremely passionate about my software projects, which I work on either solo or with my
+                        buddies. Beyond academics, I like to stay active with activities like powerlifting and
+                        badminton.
+                        Sometimes, for fun, my friends and I like to tackle leetcode problems. And in those rare moments
+                        of free time, you might catch me gaming, building cool keyboards and computers, or going on food
                         shopping trips with my mates.
                     </p>
                     <div id="social_container">
                         <ul id="socials" class="list-unstyled d-flex justify-content-center">
                             <li>
-                                <a class="fa fa-linkedin fa-xl" href="https://www.linkedin.com/in/mad-0000">
-                                </a>
+                                <div>
+                                    <a class="fa fa-linkedin fa-xl" href="https://www.linkedin.com/in/mad-0000">
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <a class="fa fa-github fa-xl" href="https://github.com/02MESH">
-                                </a>
+                                <div>
+                                    <a class="fa fa-github fa-xl" href="https://github.com/02MESH">
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <a class="fa-brands fa-docker fa-xl" href="#">
-                                </a>
+                                <div>
+                                    <a class="fa-brands fa-docker fa-xl" href="#">
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                     <div class="btn-container justify-content-center cv_buttons">
                         <button type="button" class="btn profile-button cv_buttons">View CV</button>
-                        <button type="button" onclick="location.href='./#contact-me'" class="btn profile-button">Download CV</button>
+                        <button type="button" onclick="location.href='./#contact-me'"
+                            class="btn profile-button">Download CV</button>
                     </div>
                 </div>
             </div>
@@ -121,128 +130,212 @@
     <!--Education section-->
     <!-- class="animate__animated animate__fadeInUpBig" -->
     <section id="education">
-        <div class="container">
+        <div class="container col-xxl-8 px-4 py-5">
             <h1 class="section_header animate__animated animate__fadeInUpBig">My Education</h1>
             <div class="row">
                 <div class="col-12">
                     <div class="education_container animate__animated animate__fadeInUpBig mx-auto mb-5">
                         <H4>University of Kent</H4>
                         <em><span>Bachelors in Computer Science</span></em><span> | <em></span><span>Sep 2021 - Jun
-                                2024</span></em>
+                            2024</span></em>
                         <p><strong>Cumulative Average:</strong> 80%. <strong>First Class Predicted</strong></p>
-                        <p><strong>Relevant Coursework;<br> (1st Year):</strong>Introduction to Object-Oriented Programming, 
-                        Computers and the Cloud, Human-Computer Interaction, Foundations of Computing 1 (Mathematics), Further
-                        Object-Oriented Programming, Foundations of Computing 2 (Mathematics), Problem Solving with 
-                        Algorithms, Databases an the Web.<br> <strong>(2nd Year):</strong> Computer Systems, Theory of Computing, 
-                        Algorithms Correctness and Efficiency, Introduction to Artificial Intelligence, Database Systems,
-                        Functional Programming, Software Development, Introduction to Cyber Security. <br><strong>(3rd Year i.e. current):
-                        </strong>Video Games Development (Unity), Computational Intelligence in Business, Economics and Finance, 
-                        Internet of Things, Solving Problems with Data and Text, Blockchain Systems, Computational Creativity</p>
+                        <p><strong>Relevant Coursework;<br> (1st Year):</strong>Introduction to Object-Oriented
+                            Programming,
+                            Computers and the Cloud, Human-Computer Interaction, Foundations of Computing 1
+                            (Mathematics), Further
+                            Object-Oriented Programming, Foundations of Computing 2 (Mathematics), Problem Solving with
+                            Algorithms, Databases an the Web.<br> <strong>(2nd Year):</strong> Computer Systems, Theory
+                            of Computing,
+                            Algorithms Correctness and Efficiency, Introduction to Artificial Intelligence, Database
+                            Systems,
+                            Functional Programming, Software Development, Introduction to Cyber Security.
+                            <br><strong>(3rd Year i.e. current):
+                            </strong>Video Games Development (Unity), Computational Intelligence in Business, Economics
+                            and Finance,
+                            Internet of Things, Solving Problems with Data and Text, Blockchain Systems, Computational
+                            Creativity
+                        </p>
                     </div>
                 </div>
             </div class="row">
-                <div class="col-12">
-                    <div class="education_container animate__animated animate__fadeInUpBig mx-auto">
-                        <H4>St. Gregorys Catholic Science College</H4>
-                        <em><span>A-Levels</span></em><span> | <em></span><span>Sep 2018 - Apr 2021</span></em>
-                        <p><strong>Subjects: </strong>Business Studies, Computer Science & Psychology</p>
-                        <p><strong>Grades received:</strong> BBB</p>
-                        <p><strong>Relevant Coursework:</strong>Python Programming, Introduction to Artificial 
-                            Intelligence, Data Structures and Algorithms.</p>
-                    </div>
-
+            <div class="col-12">
+                <div class="education_container animate__animated animate__fadeInUpBig mx-auto">
+                    <H4>St. Gregorys Catholic Science College</H4>
+                    <em><span>A-Levels</span></em><span> | <em></span><span>Sep 2018 - Apr 2021</span></em>
+                    <p><strong>Subjects: </strong>Business Studies, Computer Science & Psychology</p>
+                    <p><strong>Grades received:</strong> BBB</p>
+                    <p><strong>Relevant Coursework:</strong>Python Programming, Introduction to Artificial
+                        Intelligence, Data Structures and Algorithms.</p>
                 </div>
+
             </div>
+        </div>
         </div>
     </section>
 
     <!--Personal Projects section-->
     <section id="personal_projects">
-        <div class="container">
+        <div class="container col-xxl-8 px-4 py-5">
             <h1 class="section_header  animate__animated animate__fadeInUpBig ">Personal Projects</h1>
-            <div class="row  animate__animated animate__fadeInUpBig ">
-                <div class="col-sm-6">
+            <div class="row animate__animated animate__fadeInUpBig ">
+                <div class="col-sm-12 col-md-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
-                            <i class="fa-solid fa-film"></i>
-                            
+                            <div class="personal_project_heading">
+                                <i class="fa-brands fa-docker fa-2xl"></i>
+                                <h5>
+                                    Docker App
+                                </h5>
+                            </div>
+                            <p>
+                                Wrote a app in C++ which then by using Docker and Kubernetes, created
+                                a custom app on the Amazon Cloud making it easy to execute anytime.
+                            </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
-                            <i class="fa-solid fa-film"></i>
-                            
+                            <div class="personal_project_heading">
+                                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                                <h5>
+                                    Shopping Website
+                                </h5>
+                            </div>
+                            <p>
+                                Built a robust and scalable website by using express.js for routing, 
+                                middleware management, and handling HTTP requests. Furthermore, also
+                                Implemented server-side logic using Node.js to manage product listings, 
+                                user authentication, shopping cart functionality, order processing and
+                                 database interactions.
+
+                            </p>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="row  animate__animated animate__fadeInUpBig ">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
-                            <i class="fa-solid fa-film"></i>
-                            
+                            <div class="personal_project_heading">
+                                <i class="fa-solid fa-code fa-2xl"></i>
+                                <h5>
+                                    Custom Language Compiler
+                                </h5>
+                            </div>
+                            <p>
+                                Engineered a tokeniser-parser compiler which worked with diverse datatypes 
+                                and assesses syntax validity.
+                            </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
-                            <i class="fa-solid fa-film"></i>
-                            
+                            <div class="personal_project_heading">
+                                <i class="fa-solid fa-gamepad fa-2xl"></i>
+                                <h5>
+                                    Tic-Tac-Toe
+                                </h5>
+                            </div>
+                            <p>Developed a working tic-tac-toe game with a pseudo-random artificial intelligence 
+                                algorithm that used random moves for offence and calculated moves for defence.
+                            </p>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="row animate__animated animate__fadeInUpBig ">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
-                            <i class="fa-solid fa-film"></i>
-                            
+                            <div class="personal_project_heading">
+                                <i class="fa-solid fa-chess fa-2xl"></i>
+                                <h5>
+                                    Chess
+                                </h5>
+                            </div>
+                            <p>
+                                Implemented a working chess game using the minimax algorithm
+                            </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6">
                     <a href="https://www.w3schools.com">
                         <div class="personal_project_tiles">
-                            <i class="fa-solid fa-film"></i>
-                            
+                            <div class="personal_project_heading">
+                                <i class="fa-solid fa-hospital fa-2xl"></i>
+                                <h5>
+                                    Hospital Management System
+                                </h5>
+                            </div>
+                            <p>
+                                Developed a GUI application in collaboration with other people that 
+                                allows a Hospital Receptionist to effectively manage appointments 
+                                between patients and doctors.
+                            </p>
                         </div>
                     </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <div class="personal_project_tiles">
+                        <div class="personal_project_heading">
+                            <i class="fa-solid fa-globe fa-2xl"></i>
+                            <h5>
+                                Personal Website
+                            </h5>
+                        </div>
+                        <p>
+                            I built this website from HTML/CSS & Custom Javascript templates that I
+                            found on YouTube to cater to my needs.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="technical_stack">
-        <div class="container">
+        <div class="container col-xxl-8 px-4 py-5">
             <h1 class="section_header">Technical Skills</h1>
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <div class="skills_tiles">
                         <div class="skills_section_heading">
-                            Programming Languages 
+                            Programming Languages
                         </div>
-                        <span>                       
-                            <img src="./public/images/svgs/languages/cplusplus.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/languages/python-5.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/languages/typescript.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/languages/logo-javascript.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/languages/java.png" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        <span>
+                            <img src="./public/images/svgs/languages/cplusplus.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/python-5.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/typescript.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/logo-javascript.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/java.png" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
                         </span>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="skills_tiles">
                         Webdev & Frameworks<br>
-                        <span class="skills">                        
-                            <img src="./public/images/svgs/webdevelopment/html-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/frameworks/bootstrap-5-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/frameworks/ejs-svgrepo-com.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/frameworks/nodejs-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        <span class="skills">
+                            <img src="./public/images/svgs/webdevelopment/html-1.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/bootstrap-5-1.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/ejs-svgrepo-com.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/nodejs-1.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
                         </span>
                     </div>
                 </div>
@@ -252,30 +345,44 @@
                         <div class="skills_section_heading">
                             Database & Other tech
                         </div>
-                        <span>                       
-                            <img src="./public/images/svgs/databases/mysql-logo.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/databases/postgresql.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/databases/sequelizejs-icon.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/databases/mongodb-icon-1-1.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/databases//mongoose.png" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        <span>
+                            <img src="./public/images/svgs/databases/mysql-logo.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases/postgresql.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases/sequelizejs-icon.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases/mongodb-icon-1-1.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/databases//mongoose.png" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
                         </span>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    
+
                     <div class="skills_tiles">
                         <div class="skills_section_heading">
                             Learning right now
                         </div>
-                        <span>                       
-                            <img src="./public/images/svgs/cloud/docker.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/cloud/microsoft-azure-3.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/cloud/heroku-4.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/frameworks/react-2.svg" width="30" height="30" class="d-inline-block align-text-bottom skills">
-                            <img src="./public/images/svgs/languages/java.png" width="30" height="30" class="d-inline-block align-text-bottom skills">
+                        <span>
+                            <img src="./public/images/svgs/cloud/docker.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/cloud/microsoft-azure-3.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/cloud/heroku-4.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/frameworks/react-2.svg" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
+                            <img src="./public/images/svgs/languages/java.png" width="30" height="30"
+                                class="d-inline-block align-text-bottom skills">
                         </span>
+                        <p>I'm currently using the Linux operating linux specifically MintOS inorder to specialise
+                            in DevOps and to get comfortable to writing scripts to automate my daily tasks and 
+                            project testing.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -284,31 +391,41 @@
 
     <!--Contact Me section-->
     <section id="contact_me" class="min-vh-100">
-        <div class="container">
+        <div class="container col-xxl-8 px-4 py-5">
             <h1 class="section_header">Contact Me</h1>
-            <div id="test" class="container align-items-center d-flex justify-content-center">
+            <div id="test" class="container d-flex justify-content-center">
                 <form action="https://formspree.io/f/mvojqknd" method="POST">
-                    <div class="mb-3">
-                        <label for="first_name" class="form-label">First Name</label>
-                        <input type="text" class="form-control" name="first_name" id="first_name" aria-describedby="emailHelp"
-                            required>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="first_name" class="form-label">First Name</label>
+                                <input type="text" class="form-control" name="first_name" id="first_name"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="last_name" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" name="last_name" id="last_name" required>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="last_name" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" name="last_name" id="last_name" required>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                            <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" name="email" id="email" required>
-                        <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" rows=10 name="message" id="message" required></textarea>
+                            <!-- <input type="text" class="form-control" id="exampleInputPassword1" required> -->
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" rows=10 name="message" id="message" required></textarea>
-                        <!-- <input type="text" class="form-control" id="exampleInputPassword1" required> -->
-                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LdpFzIoAAAAAIAAdMeyAikXVe3KZi3iRR65jYy2"></div>
                     <button type="submit" class="btn btn-dark">Submit</button>
-
                 </form>
             </div>
         </div>
@@ -333,29 +450,6 @@
         </ul>
     </footer>
 
-    <!-- <section id="contact-me">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image
-                    </h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                    </div>
-                </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="./public/images/profile-picture.png" class="d-block mx-lg-auto img-fluid"
-                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
     <!--Script Links here-->
     <script>
         let sec = document.querySelectorAll('section');
@@ -366,7 +460,7 @@
                 let top = window.scrollY;
                 let offset = section.offsetTop - 60;
                 let height = section.offsetHeight;
-                let id = section. getAttribute('id');
+                let id = section.getAttribute('id');
 
                 if (top >= offset && top < offset + height) {
                     links.forEach(link => {
