@@ -3,8 +3,8 @@
     margin-right: 20px;
     margin-bottom: 20px;
     display: grid;
-    background: #212529;
-    color: white;
+    background: #1E2022;
+    color: #F7F7F7;
     border-radius: 5px;
     padding: 42px 22px;
     cursor: crosshair;
@@ -13,8 +13,8 @@
     transition: ease-in-out 0.4s;
 }
 .personal_project_tiles:hover {
-    background-color: #f0f7ff;;
-    color: #212529;
+    background-color: #F7F7F7;
+    color: #1E2022;
 }
 .personal_project_tiles
 .project_icons {
@@ -23,4 +23,11 @@
 .personal_project_heading h5, 
 .personal_project_heading div i {
     display: inline-block;
+}
+.project_skills span {
+    color: black;
+    font-size:10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
 }

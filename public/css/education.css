@@ -1,5 +1,4 @@
 .education_container {
-  border-radius: 10px;
   padding: 1em 2em 1em 1em;
   border: 1px solid black;
   box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4),
@@ -16,33 +15,6 @@
 }
 
 .education_container {
-  background-color: #f0f7ff;;
-  color: black;
+  color: #1E2022;
   transition: ease-in-out 0.4s;
 }
-
-.education_container:hover {
-  background-color: black;
-  color: white;
-  transition: ease-in-out 0.4s;
-}
-
-/* .ol-cards {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 45em;
-  padding: 2em;
-  gap: 2em;
-} */
-
-/* .ol-cards li {
-display: grid;
-padding: 1em 2em 1em 0;
-row-gap: 0.5em;
-column-gap: 2em;
-box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4),
-  inset 0.05em 0.05em rgba(255, 255, 255, 1);
-padding: 2%;
-} */

@@ -1,17 +1,20 @@
 .skills_tiles {
+    display: grid;
+    border: 2px solid black;
     height: 12vh;
     text-align: center;
     margin-right: 10px;
     margin-bottom: 10px;
     display: grid;
-    background-color: white;
+    background-color: #F7F7F7;
     color: #212529;
-    border-radius: 5px;
     padding: 20px 20px;
     cursor: crosshair;
     position: relative;
     top: 0;
     transition: ease-in-out 0.4s;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4),
+    inset 0.05em 0.05em rgba(255, 255, 255, 1);
 }
 
 .skills_tiles:hover {
