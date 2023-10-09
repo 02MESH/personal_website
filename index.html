@@ -118,10 +118,15 @@
                         </ul>
                     </div>
                     <div class="btn-container justify-content-center cv_buttons">
-                        <button type="button" class="btn profile-button cv_buttons">View CV</button>
-                        <button type="button" onclick="location.href='./#contact-me'"
-                            class="btn profile-button">Download CV</button>
+                        <a href="public/resources/cv.pdf" target="_blank"><button type="button" class="btn profile-button cv_buttons">View CV</button></a>
+                        <button type="button" onclick="scrollToProjects()" class="btn profile-button cv_buttons">Projects</button>
                     </div>
+                    <script>
+                        function scrollToProjects() {
+                            var elem = document.getElementById("personal_projects");
+                            elem.scrollIntoView();
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -179,7 +184,7 @@
             <h1 class="section_header  animate__animated animate__fadeInUpBig ">Personal Projects</h1>
             <div class="row animate__animated animate__fadeInUpBig ">
                 <div class="col-sm-12 col-md-6">
-                    <a href="https://www.w3schools.com">
+                    <a href="https://github.com/02MESH/personal_website">
                         <div class="personal_project_tiles">
                             <div class="personal_project_heading">
                                 <i class="fa-brands fa-docker fa-2xl"></i>
@@ -188,12 +193,11 @@
                                 </h5>
                             </div>
                             <p>
-                                Wrote a app in C++ which then by using Docker and Kubernetes, created
-                                a custom app on the Amazon Cloud making it easy to execute anytime.
+                                Implemented a mongoDB testing script template that uses GitHub Workflows to automate testing.
                             </p>
                             <div class="project_skills">
                                 <span>Docker</span>
-                                <span>Kubernetes</span>
+                                <span>CI/CD (GitHub Actions)</span>
                             </div>
                         </div>
                     </a>
