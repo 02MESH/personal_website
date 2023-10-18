@@ -1,7 +1,6 @@
 .skills_tiles {
     display: grid;
     border: 2px solid black;
-    height: 12vh;
     text-align: center;
     margin-right: 10px;
     margin-bottom: 10px;
